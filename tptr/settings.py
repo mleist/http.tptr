@@ -112,6 +112,7 @@ INSTALLED_APPS = (
     'djangocms_column',
     'djangocms_file',
     'djangocms_link',
+    'djangocms_icon',
     'djangocms_picture',
     'djangocms_style',
     'djangocms_snippet',
@@ -134,6 +135,7 @@ INSTALLED_APPS = (
     'djangocms_bootstrap4.contrib.bootstrap4_tabs',
     'djangocms_bootstrap4.contrib.bootstrap4_utilities',
     'djangocms_history',
+    'dbbackup',  # django-dbbackup
     'tptr'
 )
 
@@ -192,3 +194,6 @@ THUMBNAIL_PROCESSORS = (
     'filer.thumbnail_processors.scale_and_crop_with_subject_location',
     'easy_thumbnails.processors.filters'
 )
+
+#DBBACKUP_STORAGE = 'dbbackup.storage.filesystem_storage'
+DBBACKUP_STORAGE_OPTIONS = {'location': './backups'}
