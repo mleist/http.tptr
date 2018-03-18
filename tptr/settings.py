@@ -117,6 +117,7 @@ INSTALLED_APPS = (
     'djangocms_snippet',
     'djangocms_googlemap',
     'djangocms_video',
+    'djangocms_forms',
     'djangocms_bootstrap4',
     'djangocms_bootstrap4.contrib.bootstrap4_alerts',
     'djangocms_bootstrap4.contrib.bootstrap4_badge',
